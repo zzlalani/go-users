@@ -3,6 +3,7 @@ package repositories
 import (
 	"github.com/zzlalani/go-users/classes"
 	"github.com/zzlalani/go-users/models"
+	"github.com/zzlalani/go-users/utilities"
 )
 
 func GetUsers() []classes.UserResponseGet {
@@ -24,7 +25,7 @@ func CreateUser(requestPost *classes.UserRequestPost) {
 	db := models.GetDB()
 	user := models.User{
 		Email: requestPost.Email,
-		Password: requestPost.Password,
+		Password: utilities.HashAndSalt([]byte(requestPost.Password)),
 	}
 	db.Create(&user)
 	db.Model(&user).Update("UpdatedBy", requestPost.Email).Update("CreatedBy", requestPost.Email)
