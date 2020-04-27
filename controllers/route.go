@@ -5,10 +5,9 @@ import (
 	"time"
 )
 
-var route *gin.Engine
-
 func InitRoutes() {
-	route = gin.Default()
+	route := gin.Default()
+	route.Use(gin.Logger())
 	// ping the server
 	route.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
@@ -18,7 +17,7 @@ func InitRoutes() {
 
 	InitUserRoutes(route)
 
-	err := route.Run()
+	err := route.Run(":8080")
 	if err != nil {
 		panic(err)
 	}

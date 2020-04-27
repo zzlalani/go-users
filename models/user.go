@@ -6,7 +6,7 @@ import (
 
 type User struct {
 	Base
-	Email 				string			`gorm:"type:varchar(100);unique_index;" json:"email"`
+	Email 				string			`gorm:"type:varchar(100);unique_index;not null;" json:"email"`
 	Password 			string			`json:"password"`
 	LastLogin 			*time.Time		`json:"last_login"`
 	VerificationCode 	string			`gorm:"default:null" json:"verification_code"`

@@ -87,7 +87,13 @@ google.golang.org/protobuf v0.0.0-20200228230310-ab0ca4ff8a60/go.mod h1:cfTl7dwQ
 google.golang.org/protobuf v1.20.1-0.20200309200217-e05f789c0967/go.mod h1:A+miEFZTKqfCUM6K7xSMQL9OKL/b6hQv+e19PK+JZNE=
 google.golang.org/protobuf v1.21.0 h1:qdOKuR/EIArgaWNjetjgTzgVTAZ+S/WXVrq9HW9zimw=
 google.golang.org/protobuf v1.21.0/go.mod h1:47Nbq4nVaFHyn7ilMalzfO3qCViNmqZ2kzikPIcrTAo=
+gopkg.in/bluesuncorp/validator.v2 v2.0.0-20150311033435-276e0f9b5832 h1:L9vPV9GnCu9kGWfHCoxm97IEuZITVs9mWxTA9gl6mLA=
+gopkg.in/bluesuncorp/validator.v2 v2.0.0-20150311033435-276e0f9b5832/go.mod h1:OcQFSnTztFeEQ/nuEvaxvlucLdNOuuFnHZSBEuynUOk=
+gopkg.in/bluesuncorp/validator.v9 v9.31.0 h1:lhBuElBGqJzSBjXAMkzI7wpYHvFbKMOXuUmIDxePR10=
+gopkg.in/bluesuncorp/validator.v9 v9.31.0/go.mod h1:sz1RrKEIYJCpC5S6ruDsBWo5vYV69E+bEZ86LbUsSZ8=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/validator.v2 v2.0.0-20191107172027-c3144fdedc21 h1:2QQcyaEBdpfjjYkF0MXc69jZbHb4IOYuXz2UwsmVM8k=
+gopkg.in/validator.v2 v2.0.0-20191107172027-c3144fdedc21/go.mod h1:o4V0GXN9/CAmCsvJ0oXYZvrZOe7syiDZSN1GWGZTGzc=
 gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.2.8 h1:obN1ZagJSUGI0Ek/LBmuj4SNLPfIny3KsKFopxRdj10=
 gopkg.in/yaml.v2 v2.2.8/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=

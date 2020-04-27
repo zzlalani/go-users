@@ -1,10 +1,11 @@
 package classes
 
-type UserRequestPost struct {
-	Email		string		`json:"email"`
-	Password	string		`json:"password"`
+type UserRequestCreate struct {
+	Email		string		`form:"email" json:"email" validate:"required,email"`
+	Password	string		`form:"password" json:"password" validate:"required,min=8,max=32"`
 }
 
-type UserRequestPut struct {
-	UserRequestPost
+type UserRequestUpdate struct {
+	Email		string		`form:"email" json:"email" validate:"required,email"`
+	Password	string		`form:"password" json:"password" validate:"required,min=8,max=32"`
 }

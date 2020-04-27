@@ -1,0 +1,34 @@
+package enumeration
+
+// User 2xxx
+// Get Users 21xx
+// Create Users 22xx
+// Update Users 23xx
+// Delete Users 24xx
+
+var ErrorCodes = map[string]map[string]int {
+	"BadRequest": { // 400
+	},
+	"Conflict" : { // 409
+		"CREATE_USER_ALREADY_EXISTS": 409002201,
+		"UPDATE_USER_ALREADY_EXISTS": 409002301,
+	},
+	"InternalServerError": { // 500
+		"SYSTEM_ERROR": 500000001,
+		"GET_USERS_UNKNOWN_ERROR": 500002101,
+		"GET_USER_UNKNOWN_ERROR": 500002102,
+		"CREATE_USER_UNKNOWN_ERROR": 500002201,
+		"CREATE_USER_DATA_BIND_ERROR": 500002202,
+		"UPDATE_USER_UNKNOWN_ERROR": 500002301,
+		"UPDATE_USER_DATA_BIND_ERROR": 500002302,
+		"DELETE_USER_UNKNOWN_ERROR": 500002401,
+	},
+	"NotFound": { // 404
+		"CREATE_USER_NOT_FOUND": 4040002201,
+		"UPDATE_USER_NOT_FOUND": 4040002301,
+	},
+	"UnprocessableEntity": { // 422
+		"CREATE_USER_INPUT_ERROR": 4220002201,
+		"UPDATE_USER_INPUT_ERROR": 4220002301,
+	},
+}
